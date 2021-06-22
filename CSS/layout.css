@@ -1,0 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700'); */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 43, 69);
+} */
+/* .container{
+    display: grid;
+    grid-template-rows: 100px 470px 150px;
+    margin: 2rem auto;
+    width: 1000px;
+    background-color: rgb(0, 0, 0);
+} */
+
+/* .main{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 680px 320px;
+    
+} */
+/* .main__content{
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 230px 230px;
+} */
+@media (max-width: 600px) {
+.row {
+-webkit-flex-direction: column;
+flex-direction: column;
+}
+}

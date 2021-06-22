@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesional Website - David J. Patterson</title>
+    <div class="tablink">
+        <a href="index.html"></a><button class="tablink" onclick="openPage('Home', this, 'red')">Home</button></a>
+        <a href="index.html"></a><button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Projects</button></a>
+        <a href="index.html"></a><button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button></a>
+        <a href="index.html"><button class="tablink" onclick="openPage('About', this, 'orange')">About</button></a>
+    </div>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: main;
+        }
+
+        .item3 {
+            grid-area: right;
+        }
+
+        .item4 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: rgb(235, 225, 220);
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(147, 147, 192);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 3px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>David J. Patterson</h1>
+
+    <div class="grid-container">
+        <div class="item1">Who's ready to code?</div>
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="headshot.jpg" alt="headshot" style="width:300px; height: 300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>David J. Patterson</p>
+                        <p>Full-Stack Java Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="item2">I am currently enrolled in the Full-Stack Java course at We Can Code It at our Columbus location. 
+            <p>Before coding I was a personal fitness coach and had blast doing that. </p>
+        </div>
+        <div class="item3">I have been a leader in Pizza mentorship program for the past 2 years and I have had a ton of
+            fun and personal fullfilment doing that.</div>
+        <div class="item4">I enjoy reading, working out, going on bike rides. I love the NFL and watching the games every Sunday
+                during the season.(Go Browns!)
+            </div>
+
+        <p>Below are a couple of projects that I've been a part of.</p>
+    </div>
+
+</body>
+<ul>
+<div class="row">
+    <li><a href="./virtualpet.html"><div class="column" style="background-color:rgb(147, 147, 192)">VirualPet</div></a></li>
+    <li><a href="./petshelter.html"><div class="column" style="background-color:rgb(147, 147, 192)">Virtual Pet Shelter</div></a></li>
+    <li><a href="./animereview.html"><div class="column" style="background-color:rgb(147, 147, 192)">AnimeReview</div></a></li>
+</div>
+</ul>
+
+<div class="bottomshit">
+    <div class="footer1">
+        <button class="footer">Email: 6dpatt@gmail.com</button>
+    </div>
+    <div class="footer2">
+       <a href="https://www.linkedin.com/in/david-patterson-612239215/"><button class="footer">Linkdin</button></a>
+    </div>
+    <div class="footer3">
+        <a href="https://app.joinhandshake.com/users/32020951"><button class="footer">HandShake</button></a>
+    </div>
+    <div class="footer4">
+        <a href="https://github.com/Coach-David"><button class="footer">GitHub...</button></a>
+    </div>
+</div>
+
+
+</html>
